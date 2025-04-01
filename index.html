@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <style>header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+    nav{
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        display: flex; 
+    }
+    
+    </style>
+</head>
+<body>  
+    <header>
+        <h1>El Faro</h1>
+        <img src="img/logo_faro.jpg" alt="logo" width="200" height="200"> 
+    </header>   
+    <nav>
+        <a>Inicio</a> 
+        <a>Deporte</a>
+        <a>Negocios</a>
+    </nav> 
+    <section>
+        <div>
+            <h2>Noticias Generales</h2>
+        <table id="TablaNoticiaGeneral" border="1">
+            <tr>
+                <th>
+                    <h3>Suegra acusada de matar a su joven nuera</h3>
+                </th>
+                <th>
+                    <h3>Crimen</h3>
+                </th>
+                <th>
+                    <img src="img/Noticias/foto2.jpg">
+                    <p>El crimen ocurrió la madrugada de este jueves al interior de un domicilio ubicado en la comuna de Osorno</p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Todos los feriados de abril: Ojo con dos días de Semana Santa</h3>
+                </th>
+                <th>
+                    <h3>Anuncio</h3>
+                </th>
+                <th>
+                    <img src="img/Noticias/foto3.jpg">
+                    <p>Después de casi  tres meses sin festivos, este mes de abril trae consigo días feriados, algo que no se veía en este año desde enero, cuando se celebró el Año Nuevo.</p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Terremoto en Birmania: Continúan los trabajos de rescate y se reportan 1.700 muertos, 3.400 heridos y 300 desaparecidos</h3>
+                </th>
+                <th>
+                    <h3>Anuncio</h3>
+                </th>
+                <th>
+                    <img src="img/Noticias/foto1.jpg">
+                    <p>Los servicios de emergencia siguen buscando este domingo a víctimas del terremoto del viernes que dejó al menos a 1.700 muertos en Birmania y se sintió hasta Bangkok, capital de Tailandia, donde fallecieron 17 personas.</p>
+                </th>
+            </tr>
+        </table>
+        </div>
+        <div>
+            <h2>Sección video Noticias</h2>
+            <video  height="500" width="500" controls>
+                <source src="videos/video.mp4.mp4" type="video/mp4">
+            </video>
+        </div>  
+        <div>
+            <h2>Audio Noticias</h2>
+            <audio controls>
+                <source src="Audio/audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>  
+    </section>
+    <section>
+        <div>
+            <h2>Sección de Deportes</h2>
+        <table id="SeccionDeDeportes" border="1">
+            <tr>
+                <th>
+                    <h3>Universidad de Chile anota dura derrota frente a Everton</h3>
+                </th>
+                <th>
+                    <h3>Deporte</h3>
+                </th>
+                <th>
+                    <img src="img/Deportes/foto1.PNG">
+                    <p>Una Universidad de Chile deslucida y sin muchas ideas en los metros finales de la cancha, fue superada sin mayores contratiempos por un aplicado Everton, que se impuso por 2-0</p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Colo Colo lanza vinos conmemorativos por su Centenario</h3>
+                </th>
+                <th>
+                    <h3>Deporte</h3>
+                </th>
+                <th>
+                    <img src="img/Deportes/foto2.jpg">
+                    <p>Hace algunas semanas salieron a la venta cereales y barras de cereales de Colo Colo, que se comercializan en una conocida cadena de supermercados; y ahora se lanzaron tres vinos del Cacique.</p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Alcohol en el Mundial de Arabia Saudí estará prohibido</h3>
+                </th>
+                <th>
+                    <h3>Deporte</h3>
+                </th>
+                <th>
+                    <img src="img/Deportes/foto3.png" height="150" width="300">
+                    <p>En 2022, Catar avisó de la prohibición de beber alcohol dos días antes del comienzo del torneo.</p>
+                </th>
+            </tr>
+        </table>
+        </div>  
+    </section>
+    <section>
+        <h2>Seccion de Negocios y emprendimiento</h2>
+        <div>
+            <h3>Las empresas que sostienen la economía y se sobreponen a las adversidades</h3>
+            <img src="img/Negocio - emprendimiento/foto1.PNG">
+            <p>Banco Santander y Cámara de Comercio reconocen la valentía de las pequeñas y medianas empresas y se comprometen a seguir apoyando su crecimiento frente a los obstáculos naturales y globales</p>
+        </div>
+        <div>
+            <h3>Relatidos: dando voz a la cultura y la memoria rural</h3>
+            <img src="img/Negocio - emprendimiento/foto2.PNG">
+            <p>Emprendedores de un pueblo de Jaén lanzan una aplicación donde compartir historias e interactuar con los protagonistas de la España despoblada</p>
+        </div>
+        <div>
+            <h3>Así es el éxito del viticultor Jorge Olivera: su primera añada se cuela en los restaurantes que rinden culto al vino</h3>
+            <img src="img/Negocio - emprendimiento/foto3.PNG">
+            <p>De un pequeño club de cata con amigos y plantar unas pocas viñas en el Sobrarbe (Huesca) para participar en el concurso anual de su pueblo, a estar en el mapa del sector vinícola</p>
+        </div>
+    </section>
+</body>
+</html>
