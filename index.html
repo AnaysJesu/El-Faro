@@ -4,21 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
-    <style>header{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        display: flex;
-    }
-    nav{
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        display: flex; 
-    }
-    
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>  
     <header>
@@ -30,10 +19,10 @@
         <a>Deporte</a>
         <a>Negocios</a>
     </nav> 
-    <section>
-        <div>
+    <section class="N1">
+        <div class="N2">
             <h2>Noticias Generales</h2>
-        <table id="TablaNoticiaGeneral" border="1">
+        <table class="TablaNoticiaGeneral" border="1">
             <tr>
                 <th>
                     <h3>Suegra acusada de matar a su joven nuera</h3>
@@ -44,6 +33,7 @@
                 <th>
                     <img src="img/Noticias/foto2.jpg">
                     <p>El crimen ocurrió la madrugada de este jueves al interior de un domicilio ubicado en la comuna de Osorno</p>
+                    <a class="Enlace1" href="https://www.meganoticias.cl/nacional/480507-osorno-asesinato-joven-manos-suegra-prision-preventiva-todo-lo-que-se-sabe-del-caso-fds01-29-03-2025.html">Mas info aqui</a>
                 </th>
             </tr>
             <tr>
@@ -68,6 +58,7 @@
                 <th>
                     <img src="img/Noticias/foto1.jpg">
                     <p>Los servicios de emergencia siguen buscando este domingo a víctimas del terremoto del viernes que dejó al menos a 1.700 muertos en Birmania y se sintió hasta Bangkok, capital de Tailandia, donde fallecieron 17 personas.</p>
+                    <a class="Enlace1" href="https://www.meganoticias.cl/mundo/481277-balance-terremoto-birmania-mas-3300-muertos220-desaparecidos-fds01-05-04-2025.html">Mas info aqui</a>
                 </th>
             </tr>
         </table>
@@ -146,5 +137,8 @@
             <p>De un pequeño club de cata con amigos y plantar unas pocas viñas en el Sobrarbe (Huesca) para participar en el concurso anual de su pueblo, a estar en el mapa del sector vinícola</p>
         </div>
     </section>
+    <footer class="Footer">
+        <h4 class="FooterText">© 2025 Todos los derechos reservados.</h4>
+    </footer>
 </body>
 </html>
