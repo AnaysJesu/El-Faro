@@ -29,22 +29,22 @@ body{
     font-weight: 200;
     font-style: normal;
 }
-.Enlace1 {
+.Enlace1{
     text-decoration: underline; 
     font-weight: normal;        
     color: blue;                
 }
-.Enlace1:hover {
+.Enlace1:hover{
     font-weight: bold;          
     text-decoration: none;      
 }
-.TablaNoticiaGeneral, #SeccionDeDeportes {
+.TablaNoticiaGeneral, #SeccionDeDeportes{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     border: none; 
 }
-.TablaNoticiaGeneral th, #SeccionDeDeportes th {
+.TablaNoticiaGeneral th, #SeccionDeDeportes th{
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
@@ -52,11 +52,11 @@ body{
     text-align: left;
     border: 1px solid #ccc; 
 }
-.TablaNoticiaGeneral th:hover, #SeccionDeDeportes th:hover {
+.TablaNoticiaGeneral th:hover, #SeccionDeDeportes th:hover{
     background-color: #000;
     color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
     .TablaNoticiaGeneral,
     #SeccionDeDeportes {
         grid-template-columns: 1fr;
@@ -73,4 +73,19 @@ body{
         width: 100% !important;
         height: auto !important;
     }
+}
+.hora{
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+}
+.btnNuevaNoticia{
+    background-color: #d6dbdf;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 50px;
+    width: 90px;
 }
