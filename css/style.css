@@ -24,7 +24,6 @@ body{
     background-color: #c9d2d0;
 }
 .FooterText{
-    color: #31231e;
     text-align: center;
     font-weight: 200;
     font-style: normal;
@@ -38,27 +37,44 @@ body{
     font-weight: bold;          
     text-decoration: none;      
 }
-.TablaNoticiaGeneral, #SeccionDeDeportes{
+.TablaNoticiaGeneral, #SeccionDeDeportes, #negocios{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     border: none; 
 }
-.TablaNoticiaGeneral th, #SeccionDeDeportes th{
+.TablaNoticiaGeneral th, #SeccionDeDeportes th, #negocios .card{
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
     transition: all 0.3s ease;
     text-align: left;
     border: 1px solid #ccc; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.TablaNoticiaGeneral th:hover, #SeccionDeDeportes th:hover{
+.TablaNoticiaGeneral th:hover, #SeccionDeDeportes th:hover, #negocios .card:hover{
     background-color: #000;
     color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.card-body{
+    padding: 15px;
+}
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 @media screen and (max-width: 600px){
     .TablaNoticiaGeneral,
-    #SeccionDeDeportes {
+    #SeccionDeDeportes,
+    #negocios .row {
         grid-template-columns: 1fr;
     }
     .TablaNoticiaGeneral th,
