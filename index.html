@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="js/index.js"></script>
 </head>
 <body>  
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>El Faro</h1>
-        <img src="img/logo_faro.jpg" alt="logo" width="200" height="200"> 
+        <img class="rounded-circle mt-3" src="img/logo_faro.jpg" alt="logo" width="200" height="200"> 
     </header>   
-    <div class="hora" id="fechaHora"></div>
-    <nav>
-        <a>Inicio</a> 
-        <a href="#SeccionDeDeportes">Deporte</a>
-        <a  href="#negocios">Negocios</a>
-        <a href="contacto.html">Contacto</a>
+    <div class="text-center mt-3" id="fechaHora"></div>
+    <nav class="nav justify-content-center bg-light py-3">
+        <a class="nav-link active" >Inicio</a> 
+        <a class="nav-link" href="#SeccionDeDeportes">Deporte</a>
+        <a class="nav-link"  href="#negocios">Negocios</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
     </nav> 
-    <section class="N1">
-        <div class="btnCrear" id="btnCrear">
-            <button class="btnNuevaNoticia" onclick="mostrarNuevoArticulo()" id="btnNuevaNoticia">Nuevas Noticias</button>
+    <section class="container my-5">
+        <div class="text-center mb-4" id="btnCrear">
+            <button class="btn btn-primary" onclick="mostrarNuevoArticulo()" id="btnNuevaNoticia">Nuevas Noticias</button>
         </div>
-        <div class="N2">
+        <div class="table-responsive">
             <h2>Noticias Generales (<span id="contador-general">0</span>)</h2>
         <table class="TablaNoticiaGeneral" border="1">
             <tr>
@@ -71,7 +72,7 @@
         </div>
         <div>
             <h2>Sección video Noticias</h2>
-            <video  height="500" width="500" controls>
+            <video  controls>
                 <source src="videos/video.mp4.mp4" type="video/mp4">
             </video>
         </div>  
@@ -82,8 +83,8 @@
             </audio>
         </div>  
     </section>
-    <section>
-        <div>
+    <section class="container my-5">
+        <div class="table-responsive">
             <h2>Sección de Deportes (<span id="contador-deporte">0</span>)</h2>
         <table id="SeccionDeDeportes" border="1">
             <tr>
@@ -125,25 +126,49 @@
         </table>
         </div>  
     </section>
-    <section id="negocios">
+    <section class="container my-5" id="negocios">
+        <div class="table-responsive">
         <h2>Seccion de Negocios y emprendimiento (<span id="contador-negocio">0</span>)</h2>
-        <div>
-            <h3>Las empresas que sostienen la economía y se sobreponen a las adversidades</h3>
-            <img src="img/Negocio - emprendimiento/foto1.PNG">
-            <p>Banco Santander y Cámara de Comercio reconocen la valentía de las pequeñas y medianas empresas y se comprometen a seguir apoyando su crecimiento frente a los obstáculos naturales y globales</p>
+        <div class="rou g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/Negocio - emprendimiento/foto1.PNG">
+                    <div class="card-body">
+                        <h3 class="card-tittle">Las empresas que sostienen la economía y se sobreponen a las adversidades</h3>
+                        <p class="card-text">Banco Santander y Cámara de Comercio reconocen la valentía de las pequeñas y medianas empresas y se comprometen a seguir apoyando su crecimiento frente a los obstáculos naturales y globales</p>
+                    </div>  
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Relatidos: dando voz a la cultura y la memoria rural</h3>
-            <img src="img/Negocio - emprendimiento/foto2.PNG">
-            <p>Emprendedores de un pueblo de Jaén lanzan una aplicación donde compartir historias e interactuar con los protagonistas de la España despoblada</p>
+        <br>
+        <br>
+        <div class="rou g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/Negocio - emprendimiento/foto2.PNG">
+                    <div class="card-body">
+                        <h3 class="card-tittle">Relatidos: dando voz a la cultura y la memoria rural</h3>
+                        <p class="card-text">Emprendedores de un pueblo de Jaén lanzan una aplicación donde compartir historias e interactuar con los protagonistas de la España despoblada</p>
+                    </div>  
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Así es el éxito del viticultor Jorge Olivera: su primera añada se cuela en los restaurantes que rinden culto al vino</h3>
-            <img src="img/Negocio - emprendimiento/foto3.PNG">
-            <p>De un pequeño club de cata con amigos y plantar unas pocas viñas en el Sobrarbe (Huesca) para participar en el concurso anual de su pueblo, a estar en el mapa del sector vinícola</p>
+        <br>
+        <br>
+        <div class="rou g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/Negocio - emprendimiento/foto3.PNG">
+                    <div class="card-body">
+                        <h3 class="card-tittle">Así es el éxito del viticultor Jorge Olivera: su primera añada se cuela en los restaurantes que rinden culto al vino</h3>
+                        <p class="card-text">De un pequeño club de cata con amigos y plantar unas pocas viñas en el Sobrarbe (Huesca) para participar en el concurso anual de su pueblo, a estar en el mapa del sector vinícola</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
         </div>
     </section>
-    <footer class="Footer">
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <h4 class="FooterText">© 2025 Todos los derechos reservados.</h4>
     </footer>
 </body>

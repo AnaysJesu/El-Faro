@@ -73,6 +73,10 @@ body{
         width: 100% !important;
         height: auto !important;
     }
+    video{
+        height: 500px;
+        width: 500px;
+    }
 }
 .hora{
     justify-content: right;
