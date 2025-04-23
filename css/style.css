@@ -22,6 +22,10 @@ body{
 }
 .Footer{
     background-color: #c9d2d0;
+    
+}
+footer{
+    height: 300px;
 }
 .FooterText{
     text-align: center;
@@ -109,3 +113,18 @@ body{
     height: 50px;
     width: 90px;
 }
+.aviso {
+    animation: parpadeo 1s infinite;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  @keyframes parpadeo {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
