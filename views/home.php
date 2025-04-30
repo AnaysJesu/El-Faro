@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<base href="/trabajo2/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="js/index.js"></script>
+<script src="assets/js/index.js"></script>
 </head>
 <body>  
     <header class="bg-primary text-white text-center py-4">
         <h1>El Faro</h1>
-        <img class="rounded-circle mt-3" src="img/logo_faro.jpg" alt="logo" width="200" height="200"> 
+        <img class="rounded-circle mt-3" src="assets/img/logo_faro.jpg" alt="logo" width="200" height="200"> 
     </header>   
     <div class="text-center mt-3" id="fechaHora"></div>
     <h5 class="aviso">⚡️ Se acercan tormentas eléctricas en la Región de Los Lagos ⚡️</h5>
     <nav class="nav justify-content-center bg-light py-3">
-        <a class="nav-link active" >Inicio</a> 
+        <a class="nav-link active" href="?page=home">Inicio</a>
         <a class="nav-link" href="#SeccionDeDeportes">Deporte</a>
         <a class="nav-link"  href="#negocios">Negocios</a>
-        <a class="nav-link" href="contacto.html">Contacto</a>
+        <a class="nav-link" href="?page=contacto">Contacto</a>
     </nav> 
     <section class="container my-5">
         <div class="text-center mb-4" id="btnCrear">
@@ -35,7 +36,7 @@
                     <div class="row g-4">
                         <div class="col-md-4">
                             <div class="card h-100">
-                                <img src="img/Noticias/foto2.jpg">
+                                <img src="assets/img/Noticias/foto2.jpg">
                                 <div class="card-body">
                                     <h3 class="card-title">Suegra acusada de matar a su joven nuera</h3>
                                     <h3>Crimen</h3>
@@ -46,7 +47,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card h-100">
-                                <img src="img/Noticias/foto3.jpg">
+                                <img src="assets/img/Noticias/foto3.jpg">
                                 <div class="card-body">
                                     <h3 class="card-title">Todos los feriados de abril: Ojo con dos días de Semana Santa</h3>
                                     <h3>Anuncio</h3>
@@ -56,7 +57,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card h-100">
-                                <img src="img/Noticias/foto1.jpg">
+                                <img src="assets/img/Noticias/foto1.jpg">
                                 <div class="card-body">
                                     <h3>Anuncio</h3>
                                     <h3 class="card-title">Terremoto en Birmania: Continúan los trabajos de rescate y se reportan 1.700 muertos, 3.400 heridos y 300 desaparecidos</h3>
@@ -72,13 +73,13 @@
         <div>
             <h2>Sección video Noticias</h2>
             <video  controls>
-                <source src="videos/video.mp4.mp4" type="video/mp4">
+                <source src="assets/videos/video.mp4.mp4" type="video/mp4">
             </video>
         </div>  
         <div>
             <h2>Audio Noticias</h2>
             <audio controls>
-                <source src="Audio/audio.mp3" type="audio/mpeg">
+                <source src="assets/Audio/audio.mp3" type="audio/mpeg">
             </audio>
         </div>  
     </section>
@@ -89,7 +90,7 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="img/Deportes/foto1.PNG">
+                    <img src="assets/img/Deportes/foto1.PNG">
                     <div class="card-body">
                         <h3 class="card-title">Universidad de Chile anota dura derrota frente a Everton</h3>
                         <h3>Deporte</h3>
@@ -99,7 +100,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="img/Deportes/foto2.jpg">
+                    <img src="assets/img/Deportes/foto2.jpg">
                     <div class="card-body">
                         <h3 class="card-title">Colo Colo lanza vinos conmemorativos por su Centenario</h3>
                         <h3>Deporte</h3>
@@ -109,7 +110,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="img/Deportes/foto3.png">
+                    <img src="assets/img/Deportes/foto3.png">
                     <div class="card-body">
                         <h3 class="card-title">Alcohol en el Mundial de Arabia Saudí estará prohibido</h3>
                         <h3>Deporte</h3>
@@ -126,7 +127,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="img/Negocio - emprendimiento/foto1.PNG" class="card-img-top" alt="Empresa economía">
+                        <img src="assets/img/Negocio - emprendimiento/foto1.PNG" class="card-img-top" alt="Empresa economía">
                         <div class="card-body">
                             <h3 class="card-title">Las empresas que sostienen la economía</h3>
                             <p class="card-text">Banco Santander y Cámara de Comercio reconocen la valentía de las pymes y su capacidad de sobreponerse a las adversidades.</p>
@@ -135,7 +136,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="img/Negocio - emprendimiento/foto2.PNG" class="card-img-top" alt="Relatidos cultura rural">
+                        <img src="assets/img/Negocio - emprendimiento/foto2.PNG" class="card-img-top" alt="Relatidos cultura rural">
                         <div class="card-body">
                             <h3 class="card-title">Relatidos: dando voz a la cultura rural</h3>
                             <p class="card-text">Emprendedores de Jaén lanzan una app para compartir historias y memorias de la España despoblada.</p>
@@ -144,7 +145,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="img/Negocio - emprendimiento/foto3.PNG" class="card-img-top" alt="Jorge Olivera vino">
+                        <img src="assets/img/Negocio - emprendimiento/foto3.PNG" class="card-img-top" alt="Jorge Olivera vino">
                         <div class="card-body">
                             <h3 class="card-title">Éxito del viticultor Jorge Olivera</h3>
                             <p class="card-text">De unas viñas en Huesca a restaurantes de culto al vino. Un proyecto que creció desde el corazón.</p>
