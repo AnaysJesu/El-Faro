@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         alert("Noticia Agregada Correctamente");
         form.reset();
-        window.location.href = "index.html";
+        window.location.href = "?page=home";
     });
 });
 function actualizarContador(){

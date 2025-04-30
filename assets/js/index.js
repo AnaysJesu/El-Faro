@@ -48,6 +48,6 @@ window.onload = function(){
     document.getElementById("btnNuevaNoticia").addEventListener("click", mostrarNuevoArticulo);
 };
 function mostrarNuevoArticulo(){
-    window.location.href = "mantenedorArticulo.html"; 
+    window.location.href = "?page=mantenedorArticulo"; 
 }
 

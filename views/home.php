@@ -24,6 +24,7 @@
         <a class="nav-link" href="#SeccionDeDeportes">Deporte</a>
         <a class="nav-link"  href="#negocios">Negocios</a>
         <a class="nav-link" href="?page=contacto">Contacto</a>
+        <a class="nav-link" href="?page=RegistroCuenta">Registrarse</a>
     </nav> 
     <section class="container my-5">
         <div class="text-center mb-4" id="btnCrear">
