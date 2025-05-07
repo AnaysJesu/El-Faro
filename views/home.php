@@ -25,6 +25,7 @@
         <a class="nav-link"  href="#negocios">Negocios</a>
         <a class="nav-link" href="?page=contacto">Contacto</a>
         <a class="nav-link" href="?page=RegistroCuenta">Registrarse</a>
+        <a class="nav-link" href="?page=MantenedorUsuarios">Mantenedor Usuario</a>
     </nav> 
     <section class="container my-5">
         <div class="text-center mb-4" id="btnCrear">

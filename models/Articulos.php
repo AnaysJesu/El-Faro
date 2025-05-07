@@ -1,16 +1,14 @@
 <?php
-public Articulos{
+public class Articulos{
     public int $id;
     public string $titulo;
     public string $descripcion;
-    public string $link;     
-    public string $seccion;  
-    public function __construct(int $id, string $titulo, string $descripcion, string $link, string $seccion){
+    public string $linkImagen;       
+    public function __construct(int $id, string $titulo, string $descripcion, string $linkImagen){
         $this->id          = $id;
         $this->titulo      = $titulo;
         $this->descripcion = $descripcion;
-        $this->link        = $link;
-        $this->seccion     = $seccion;
+        $this->link_imagen = $linkImagen;
     }
         return null;
 }
