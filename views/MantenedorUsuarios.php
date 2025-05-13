@@ -8,33 +8,7 @@
 </head>
 <body class="bg-light">
 <div class="container mt-5">
-    <h2 class="mb-4">Registrar Usuario</h2>
-    <form method="post" action="index.php?controller=MantenedorUsuarios&action=guardar" class="border p-4 bg-white rounded shadow-sm"> 
-        <div class="row mb-3">
-            <div class="col">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
-            </div>
-            <div class="col">
-                <label for="primerApellido" class="form-label">Primer Apellido</label>
-                <input type="text" class="form-control" id="primerApellido" name="primerApellido" required>
-            </div>
-            <div class="col">
-                <label for="segundoApellido" class="form-label">Segundo Apellido</label>
-                <input type="text" class="form-control" id="segundoApellido" name="segundoApellido">
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="col">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Registrar</button>
+    <form method="" action="" class=""> 
     </form>
     <hr class="my-5">
     <h2 class="mb-4">Lista de Usuarios</h2>

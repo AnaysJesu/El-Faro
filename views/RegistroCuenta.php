@@ -14,7 +14,7 @@
         <div class="card shadow">
           <div class="card-body">
             <h2 class="card-title text-center mb-4">Crear Cuenta</h2>
-            <form method="post" action="?page=register">
+            <form method="post" action="?page=registroCuenta">
               <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre Completo</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
