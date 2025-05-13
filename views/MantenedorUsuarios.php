@@ -9,7 +9,7 @@
 <body class="bg-light">
 <div class="container mt-5">
     <h2 class="mb-4">Registrar Usuario</h2>
-    <form method="" action="" class="border p-4 bg-white rounded shadow-sm">
+    <form method="post" action="index.php?controller=MantenedorUsuarios&action=guardar" class="border p-4 bg-white rounded shadow-sm"> 
         <div class="row mb-3">
             <div class="col">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -50,11 +50,11 @@
         </thead>
         <tbody>
             <?php
-            $usuarios = [
+            $usuarios =[
                 ['id' => 1, 'nombre' => 'Ana', 'primerApellido' => 'Gómez', 'segundoApellido' => 'López', 'email' => 'ana@example.com'],
                 ['id' => 2, 'nombre' => 'Luis', 'primerApellido' => 'Martínez', 'segundoApellido' => 'Pérez', 'email' => 'luis@example.com']
             ];
-            foreach ($usuarios as $u) {
+            foreach ($usuarios as $u){
                 echo "<tr>
                         <td>{$u['id']}</td>
                         <td>{$u['nombre']}</td>
