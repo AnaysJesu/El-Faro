@@ -1,14 +1,26 @@
 <?php
-public class Articulos{
-    public int $id;
-    public string $titulo;
-    public string $descripcion;
-    public string $linkImagen;       
-    public function __construct(int $id, string $titulo, string $descripcion, string $linkImagen){
-        $this->id          = $id;
-        $this->titulo      = $titulo;
-        $this->descripcion = $descripcion;
-        $this->link_imagen = $linkImagen;
+         class Articulos{
+    private $db;
+    public function __construct($conexion){
+        $this->db = $conexion;
     }
-        return null;
+    public function insertarArticulo($titulo, $seccion, $descripcion, $imagen, $url){
+        $query = $this->db->prepare("CALL sp_insertar_articulo(:titulo, :seccion, :descripcion, :imagen, :url)");
+        $query->bindParam(':titulo', $titulo);
+        $query->bindParam(':seccion', $seccion);
+        $query->bindParam(':descripcion', $descripcion);
+        $query->bindParam(':imagen', $imagen);
+        $query->bindParam(':url', $url);
+        return $query->execute();
+    }
+    public function obtenerArticulosPorSeccion($id_seccion){
+        $stmt = $this->db->prepare("CALL sp_obtener_articulos_por_seccion(:id_seccion)");
+        $stmt->bindParam(':id_seccion', $id_seccion, PDO::PARAM_INT);
+        $stmt->execute();
+    
+        $articulos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $stmt->closeCursor(); 
+    
+        return $articulos;
+    }
 }

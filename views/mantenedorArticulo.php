@@ -13,33 +13,30 @@
     <main class="container my-5">
         <section class="card p-4 shadow">
             <h1 class="mb-4">Agregar Nuevas Noticias</h1>
-            <form id="formNoticias">
-                <div class="mb-3">
-                    <label for="titulo" class="form-label">Título</label>
-                    <input type="text" class="form-control" id="titulo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="tipo" class="form-label">Tipo</label>
-                    <input type="text" class="form-control" id="tipo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="descripcion" class="form-label">Descripción</label>
-                    <textarea class="form-control" id="descripcion" rows="4" required></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="link" class="form-label">Imagen (URL)</label>
-                    <input type="text" class="form-control" id="link">
-                </div>
-                <div class="mb-4">
-                    <label for="seccion" class="form-label">Sección</label>
-                    <select class="form-select" id="seccion">
-                        <option value="general">Noticias Generales</option>
-                        <option value="deporte">Deporte</option>
-                        <option value="negocio">Negocios</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Agregar</button>
-            </form>
+            <form method="POST" action="?page=mantenedorArticulo">
+    <div class="mb-3">
+        <label for="titulo" class="form-label">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" required>
+    </div>
+    <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripción</label>
+        <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="link" class="form-label">Imagen (URL)</label>
+        <input type="text" class="form-control" id="link" name="imagen">
+    </div>
+    <div class="mb-4">
+        <label for="seccion" class="form-label">Sección</label>
+        <select class="form-select" id="seccion" name="seccion">
+            <option value="1">Noticias Generales</option>
+            <option value="2">Deporte</option>
+            <option value="3">Negocios</option>
+        </select>
+    </div>
+    <input type="hidden" name="id_usuario_creacion" value="1">
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
         </section>
     </main>
 </body>

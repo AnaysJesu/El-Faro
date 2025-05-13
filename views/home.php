@@ -27,51 +27,26 @@
         <a class="nav-link" href="?page=RegistroCuenta">Registrarse</a>
         <a class="nav-link" href="?page=MantenedorUsuarios">Mantenedor Usuario</a>
     </nav> 
+    <form id="formArticulo" method="POST" action="index.php?action=insertarArticulo">
     <section class="container my-5">
         <div class="text-center mb-4" id="btnCrear">
-            <button class="btn btn-primary" onclick="mostrarNuevoArticulo()" id="btnNuevaNoticia">Nuevas Noticias</button>
+        <a href="?page=mantenedorArticulo" class="btn btn-primary" id="btnNuevaNoticia">Nuevas Noticias</a>
         </div>
         <div class="table-responsive">
-            <h2>Noticias Generales (<span id="contador-general">0</span>)</h2>
-            <section class="container my-5" id="SeccionGeneral">
-                <div class="table-responsive">
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="assets/img/Noticias/foto2.jpg">
-                                <div class="card-body">
-                                    <h3 class="card-title">Suegra acusada de matar a su joven nuera</h3>
-                                    <h3>Crimen</h3>
-                                    <p class="card-text">El crimen ocurrió la madrugada de este jueves al interior de un domicilio ubicado en la comuna de Osorno</p>
-                                    <a class="Enlace1" href="https://www.meganoticias.cl/nacional/480507-osorno-asesinato-joven-manos-suegra-prision-preventiva-todo-lo-que-se-sabe-del-caso-fds01-29-03-2025.html">Mas info aqui</a>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="assets/img/Noticias/foto3.jpg">
-                                <div class="card-body">
-                                    <h3 class="card-title">Todos los feriados de abril: Ojo con dos días de Semana Santa</h3>
-                                    <h3>Anuncio</h3>
-                                    <p class="card-text">Después de casi  tres meses sin festivos, este mes de abril trae consigo días feriados, algo que no se veía en este año desde enero, cuando se celebró el Año Nuevo.</p>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="assets/img/Noticias/foto1.jpg">
-                                <div class="card-body">
-                                    <h3>Anuncio</h3>
-                                    <h3 class="card-title">Terremoto en Birmania: Continúan los trabajos de rescate y se reportan 1.700 muertos, 3.400 heridos y 300 desaparecidos</h3>
-                                    <p class="card-text">Terremoto en Birmania: Continúan los trabajos de rescate y se reportan 1.700 muertos, 3.400 heridos y 300 desaparecidos</p>
-                                    <a class="Enlace1" href="https://www.meganoticias.cl/mundo/481277-balance-terremoto-birmania-mas-3300-muertos220-desaparecidos-fds01-05-04-2025.html">Mas info aqui</a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
+        <h2>Noticias Generales (<?= count($articulosGeneral) ?>)</h2>
+<div class="row g-4">
+    <?php foreach ($articulosGeneral as $articulo): ?>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="<?= htmlspecialchars($articulo['imagen']) ?>" class="card-img-top" alt="Imagen noticia">
+                <div class="card-body">
+                    <h3 class="card-title"><?= htmlspecialchars($articulo['titulo']) ?></h3>
+                    <p class="card-text"><?= htmlspecialchars($articulo['descripcion']) ?></p>
                 </div>
-            </section>
+            </div>
         </div>
+    <?php endforeach; ?>
+</div>
         <div>
             <h2>Sección video Noticias</h2>
             <video  controls>
@@ -87,76 +62,39 @@
     </section>
  <section class="container my-5" id="SeccionDeDeportes">
     <div class="table-responsive">
-        <h2>Sección de Deportes (<span id="contador-deporte">0</span>)</h2>
-        
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="assets/img/Deportes/foto1.PNG">
-                    <div class="card-body">
-                        <h3 class="card-title">Universidad de Chile anota dura derrota frente a Everton</h3>
-                        <h3>Deporte</h3>
-                        <p class="card-text">Una Universidad de Chile deslucida y sin muchas ideas en los metros finales de la cancha, fue superada sin mayores contratiempos por un aplicado Everton, que se impuso por 2-0.</p>
-                    </div>  
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="assets/img/Deportes/foto2.jpg">
-                    <div class="card-body">
-                        <h3 class="card-title">Colo Colo lanza vinos conmemorativos por su Centenario</h3>
-                        <h3>Deporte</h3>
-                        <p class="card-text">Hace algunas semanas salieron a la venta cereales y barras de cereales de Colo Colo, que se comercializan en una conocida cadena de supermercados; y ahora se lanzaron tres vinos del Cacique.</p>
-                    </div>  
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="assets/img/Deportes/foto3.png">
-                    <div class="card-body">
-                        <h3 class="card-title">Alcohol en el Mundial de Arabia Saudí estará prohibido</h3>
-                        <h3>Deporte</h3>
-                        <p class="card-text">En 2022, Catar avisó de la prohibición de beber alcohol dos días antes del comienzo del torneo.</p>
-                    </div>  
+    <h2>Sección de Deportes (<?= count($articulosDeporte) ?>)</h2>
+<div class="row g-4">
+    <?php foreach ($articulosDeporte as $articulo): ?>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="<?= htmlspecialchars($articulo['imagen']) ?>" class="card-img-top" alt="Imagen noticia">
+                <div class="card-body">
+                    <h3 class="card-title"><?= htmlspecialchars($articulo['titulo']) ?></h3>
+                    <p class="card-text"><?= htmlspecialchars($articulo['descripcion']) ?></p>
                 </div>
             </div>
         </div>
-    </div>
+    <?php endforeach; ?>
+</div>
 </section>
     <section class="container my-5" id="negocios">
         <div class="table-responsive">
-            <h2>Sección de Negocios y emprendimiento (<span id="contador-negocio">0</span>)</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/img/Negocio - emprendimiento/foto1.PNG" class="card-img-top" alt="Empresa economía">
-                        <div class="card-body">
-                            <h3 class="card-title">Las empresas que sostienen la economía</h3>
-                            <p class="card-text">Banco Santander y Cámara de Comercio reconocen la valentía de las pymes y su capacidad de sobreponerse a las adversidades.</p>
-                        </div>  
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/img/Negocio - emprendimiento/foto2.PNG" class="card-img-top" alt="Relatidos cultura rural">
-                        <div class="card-body">
-                            <h3 class="card-title">Relatidos: dando voz a la cultura rural</h3>
-                            <p class="card-text">Emprendedores de Jaén lanzan una app para compartir historias y memorias de la España despoblada.</p>
-                        </div>  
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/img/Negocio - emprendimiento/foto3.PNG" class="card-img-top" alt="Jorge Olivera vino">
-                        <div class="card-body">
-                            <h3 class="card-title">Éxito del viticultor Jorge Olivera</h3>
-                            <p class="card-text">De unas viñas en Huesca a restaurantes de culto al vino. Un proyecto que creció desde el corazón.</p>
-                        </div>  
-                    </div>
+        <h2>Sección de Negocios y Emprendimiento (<?= count($articulosNegocio) ?>)</h2>
+<div class="row g-4">
+    <?php foreach ($articulosNegocio as $articulo): ?>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="<?= htmlspecialchars($articulo['imagen']) ?>" class="card-img-top" alt="Imagen noticia">
+                <div class="card-body">
+                    <h3 class="card-title"><?= htmlspecialchars($articulo['titulo']) ?></h3>
+                    <p class="card-text"><?= htmlspecialchars($articulo['descripcion']) ?></p>
                 </div>
             </div>
         </div>
+    <?php endforeach; ?>
+</div>
     </section>
+</form>
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
             <h5 class="FooterText mb-3">© 2025 Todos los derechos reservados.</h5>
