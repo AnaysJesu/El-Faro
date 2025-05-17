@@ -1,0 +1,5 @@
+section{
+    flex-direction: column;
+    display: flex;
+    width: 600px;
+}
