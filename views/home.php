@@ -18,7 +18,7 @@
         <img class="rounded-circle mt-3" src="assets/img/logo_faro.jpg" alt="logo" width="200" height="200"> 
     </header>   
     <div class="text-center mt-3" id="fechaHora"></div>
-    <h5 class="aviso">⚡️ Se acercan tormentas eléctricas en la Región de Los Lagos ⚡️</h5>
+    <h5 class="aviso">Se acercan tormentas eléctricas en la Región de Los Lagos</h5>
     <nav class="nav justify-content-center bg-light py-3">
         <a class="nav-link active" href="?page=home">Inicio</a>
         <a class="nav-link" href="#SeccionDeDeportes">Deporte</a>
@@ -33,7 +33,7 @@
         <a href="?page=mantenedorArticulo" class="btn btn-primary" id="btnNuevaNoticia">Nuevas Noticias</a>
         </div>
         <div class="table-responsive">
-        <h2>Noticias Generales (<?= count($articulosGeneral) ?>)</h2>
+        <h2>Noticias Generales</h2>
 <div class="row g-4">
     <?php foreach ($articulosGeneral as $articulo): ?>
         <div class="col-md-4">
@@ -62,7 +62,7 @@
     </section>
  <section class="container my-5" id="SeccionDeDeportes">
     <div class="table-responsive">
-    <h2>Sección de Deportes (<?= count($articulosDeporte) ?>)</h2>
+    <h2>Sección de Deportes</h2>
 <div class="row g-4">
     <?php foreach ($articulosDeporte as $articulo): ?>
         <div class="col-md-4">
@@ -79,7 +79,7 @@
 </section>
     <section class="container my-5" id="negocios">
         <div class="table-responsive">
-        <h2>Sección de Negocios y Emprendimiento (<?= count($articulosNegocio) ?>)</h2>
+        <h2>Sección de Negocios y Emprendimiento</h2>
 <div class="row g-4">
     <?php foreach ($articulosNegocio as $articulo): ?>
         <div class="col-md-4">
