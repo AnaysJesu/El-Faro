@@ -15,7 +15,7 @@ class RegistroCuentaController{
                 $repo = new UsuarioRepository();
                 $repo->guardar($nuevoUsuario);
                 echo "<div class='alert alert-success'>Usuario registrado con éxito.</div>";
-                header("Location: ../trabajo2/views/home.php");
+                header("Location: ../trabajo2/index.php?page=home");
                 exit();
             } else{
                 echo "<div class='alert alert-danger'>Las contraseñas no coinciden.</div>";

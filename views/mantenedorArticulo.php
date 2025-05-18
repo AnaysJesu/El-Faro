@@ -36,7 +36,7 @@
     </div>
     <input type="hidden" name="id_usuario_creacion" value="1">
     <button type="submit" class="btn btn-primary">Agregar</button>
-    <button href="?page=home" class="btn btn-primary">Volver</button>
+    <button onclick="window.location.href='?page=home'" class="btn btn-primary">Volver</button>
 </form>
         </section>
     </main>
