@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--<base href="/">-->
-    <base href="/trabajo2/">
+<base href="/trabajo2/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Noticias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styleNuevaNoticia.css">
+    <link rel="stylesheet" href="assets/css/styleNuevaNoticia.css">
     <script src="assets/js/articulos.js"></script>
 </head>
 <body>

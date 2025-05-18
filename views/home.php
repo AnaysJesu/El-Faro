@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!--<base href="/">-->
-    <base href="/trabajo2/">
+<base href="/trabajo2/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="assets/js/index.js"></script>
@@ -16,14 +15,14 @@
 <body>  
     <header class="bg-primary text-white text-center py-4">
         <h1>El Faro</h1>
-        <img class="rounded-circle mt-3" src="/assets/img/logo_faro.jpg" alt="logo" width="200" height="200"> 
+        <img class="rounded-circle mt-3" src="assets/img/logo_faro.jpg" alt="logo" width="200" height="200"> 
     </header>   
     <div class="text-center mt-3" id="fechaHora"></div>
     <h5 class="aviso">⚡️ Se acercan tormentas eléctricas en la Región de Los Lagos ⚡️</h5>
     <nav class="nav justify-content-center bg-light py-3">
         <a class="nav-link active" href="?page=home">Inicio</a>
         <a class="nav-link" href="#SeccionDeDeportes">Deporte</a>
-        <a class="nav-link" href="#negocios">Negocios</a>
+        <a class="nav-link"  href="#negocios">Negocios</a>
         <a class="nav-link" href="?page=contacto">Contacto</a>
         <a class="nav-link" href="?page=RegistroCuenta">Registrarse</a>
         <a class="nav-link" href="?page=MantenedorUsuarios">Mantenedor Usuario</a>
@@ -51,7 +50,7 @@
         <div>
             <h2>Sección video Noticias</h2>
             <video  controls>
-                <source src="/assets/videos/video.mp4.mp4" type="video/mp4">
+                <source src="assets/videos/video.mp4.mp4" type="video/mp4">
             </video>
         </div>  
         <div>
