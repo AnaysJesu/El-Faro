@@ -23,4 +23,20 @@
     
         return $articulos;
     }
+    public function contarArticulosPorSeccion($seccionId){
+    $query = "SELECT COUNT(*) as total FROM articulo WHERE id_seccion = :seccionId";
+    $stmt = $this->db->prepare($query);
+    $stmt->bindParam(':seccionId', $seccionId, PDO::PARAM_INT);
+    $stmt->execute();
+    $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $resultado['total'];
+    }
+    public function obtenerArticulosPorSeccionPaginado($seccionId, $limit, $offset){
+    $stmt = $this->db->prepare("SELECT * FROM articulo WHERE id_seccion = ? LIMIT ? OFFSET ?");
+    $stmt->bindValue(1, $seccionId, PDO::PARAM_INT);
+    $stmt->bindValue(2, $limit, PDO::PARAM_INT);
+    $stmt->bindValue(3, $offset, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetchAll();
+    }
 }
