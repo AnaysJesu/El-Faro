@@ -11,8 +11,12 @@ class HomeController{
     $totalGeneral = $articuloModel->contarArticulosPorSeccion(1);
     $totalPaginasGeneral = ceil($totalGeneral / $porPagina);
     $articulosGeneral = $articuloModel->obtenerArticulosPorSeccionPaginado(1, $porPagina, $offset);
-    $articulosDeporte = $articuloModel->obtenerArticulosPorSeccion(2);
-    $articulosNegocio = $articuloModel->obtenerArticulosPorSeccion(3);
+    $totalDeporte = $articuloModel->contarArticulosPorSeccion(2);
+    $totalPaginasDeporte = ceil($totalDeporte / $porPagina);
+    $articulosDeporte = $articuloModel->obtenerArticulosPorSeccionPaginado(2, $porPagina, $offset);
+    $totalNegocio = $articuloModel->contarArticulosPorSeccion(3);
+    $totalPaginasNegocio = ceil($totalNegocio / $porPagina);
+    $articulosNegocio = $articuloModel->obtenerArticulosPorSeccionPaginado(3, $porPagina, $offset);
         include __DIR__ . '/../views/home.php';
     }
 }

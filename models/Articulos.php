@@ -31,12 +31,12 @@
     $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
     return $resultado['total'];
     }
-    public function obtenerArticulosPorSeccionPaginado($seccionId, $limit, $offset){
+   public function obtenerArticulosPorSeccionPaginado($seccionId, $limit, $offset){
     $stmt = $this->db->prepare("SELECT * FROM articulo WHERE id_seccion = ? LIMIT ? OFFSET ?");
     $stmt->bindValue(1, $seccionId, PDO::PARAM_INT);
     $stmt->bindValue(2, $limit, PDO::PARAM_INT);
     $stmt->bindValue(3, $offset, PDO::PARAM_INT);
     $stmt->execute();
-    return $stmt->fetchAll();
-    }
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 }

@@ -55,15 +55,6 @@
             </div>
         </div>
     <?php endforeach; ?>
-    <nav aria-label="Paginación de noticias generales">
-  <ul class="pagination justify-content-center mt-4">
-    <?php for ($i = 1; $i <= $totalPaginasGeneral; $i++): ?>
-      <li class="page-item <?= ($i == $pagina) ? 'active' : '' ?>">
-        <a class="page-link" href="?page=home&pagina=<?= $i ?>"><?= $i ?></a>
-      </li>
-    <?php endfor; ?>
-  </ul>
-</nav>
 </div>
         <div>
             <h2>Sección video Noticias</h2>
@@ -112,6 +103,15 @@
     <?php endforeach; ?>
 </div>
     </section>
+    <nav aria-label="Paginación de noticias generales">
+  <ul class="pagination justify-content-center mt-4">
+    <?php for ($i = 1; $i <= $totalPaginasGeneral; $i++): ?>
+      <li class="page-item <?= ($i == $pagina) ? 'active' : '' ?>">
+        <a class="page-link" href="?page=home&pagina=<?= $i ?>"><?= $i ?></a>
+      </li>
+    <?php endfor; ?>
+  </ul>
+</nav>
 </form>
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
