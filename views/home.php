@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,13 +16,17 @@
     <header class="bg-primary text-white text-center py-4">
         <h1>El Faro</h1>
         <img class="rounded-circle mt-3" src="assets/img/logo_faro.jpg" alt="logo" width="200" height="200"> 
-        <div class="position-absolute top-0 end-0 p-3 text-white">
-    <?php if (isset($_SESSION['nombre_usuario'])): ?>
-        <div class="d-flex align-items-center">
-            <img src="assets/img/icono2.png" alt="Usuario" width="30" height="30" class="me-2">
-            <span><?= htmlspecialchars($_SESSION['nombre_usuario']) ?></span>
-        </div>
-    <?php endif; ?>
+    <div class="position-absolute top-0 end-0 p-3 text-white text-end" style="width: 150px;">
+        <?php if (isset($_SESSION['nombre_usuario'])): ?>
+            <div class="d-flex flex-column align-items-end">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="assets/img/icono2.png" alt="Usuario" width="30" height="30" class="me-2">
+                    <span><?= htmlspecialchars($_SESSION['nombre_usuario']) ?></span>
+                </div>
+                <a href="?page=logout" class="btn btn-sm" style="background-color: white; color: #000000;">Cerrar sesión</a>
+            </div>
+        <?php endif; ?>
+    </div>
 </div>
     </header>   
     <div class="text-center mt-3" id="fechaHora"></div>

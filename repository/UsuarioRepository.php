@@ -21,4 +21,10 @@ class UsuarioRepository{
         $stmt = $this->db->query("SELECT * FROM usuario");
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function obtenerPorEmail($email){
+    $sql = "SELECT * FROM usuario WHERE email = ?";
+    $stmt = $this->db->prepare($sql);
+    $stmt->execute([$email]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
 }

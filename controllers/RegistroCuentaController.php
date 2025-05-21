@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../models/Usuario.php';
 require_once __DIR__ . '/../repository/UsuarioRepository.php';
-session_start();
+
 class RegistroCuentaController{
     public function index(){
         if ($_SERVER['REQUEST_METHOD'] === 'POST'){
